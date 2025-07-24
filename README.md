@@ -45,7 +45,6 @@ RES: <br>
 RES : 
 { Triggers cashout before crash , Calculates payout using current multiplier, Adds crypto back to wallet } <br>
 
-4.
 
 
 

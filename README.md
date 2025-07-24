@@ -37,7 +37,7 @@ RES: {Returns current wallet balance in BTC/ETH + USD equivalent}
 RES: <br>
 { Places a bet using USD (converted to selected crypto) } <br>
 { Deducts crypto from wallet at current price } <br>
-
+<br>
 3.POST /api/cashout <br>
 { <br>
   "playerId": "string" <br>

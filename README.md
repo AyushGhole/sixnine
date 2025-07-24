@@ -24,11 +24,11 @@ A real-time multiplayer backend for a "Crash" betting game where players place U
 
 🛣️ API Endpoints Overview<br>
 
-1. GET /api/wallet/:playerId <br>
+1. GET https://sixnine-8eyx.onrender.com/api/wallet/:playerId <br>
 RES: {Returns current wallet balance in BTC/ETH + USD equivalent}
 <br>
 
-2.POST /api/bet <br>
+2.POST https://sixnine-8eyx.onrender.com/api/bet <br>
 { <br>
   "playerId": "string", <br>
   "usdAmount": 10, <br>
@@ -39,7 +39,7 @@ RES: <br>
 { Deducts crypto from wallet at current price } 
 <br>
 <br>
-3.POST /api/cashout <br>
+3.POST https://sixnine-8eyx.onrender.com/api/cashout <br>
 { <br>
   "playerId": "string" <br>
 } <br>
@@ -125,9 +125,9 @@ TECH STACK: <br>
    Export: initGameEngine(io)<br>
 
 ✅ Step 6: REST API Endpoints<br>
-   GET /api/wallet/:playerId: show wallet<br>
-   POST /api/bet: convert USD → crypto, deduct wallet, log transaction<br>
-   POST /api/cashout: payout based on current multiplier, update wallet, log<br>
+   GET https://sixnine-8eyx.onrender.com/api/wallet/:playerId  show wallet<br>
+   POST https://sixnine-8eyx.onrender.com/api/bet: convert USD → crypto, deduct wallet, log transaction<br>
+   POST https://sixnine-8eyx.onrender.com/api/cashout: payout based on current multiplier, update wallet, log<br>
    Controllers:<br>
    walletController.js<br>
    gameController.js<br>
@@ -150,9 +150,9 @@ TECH STACK: <br>
 
 ✅ Step 9: Testing the Application
    Use Postman to hit:<br>
-    /api/wallet/:id<br>
-    /api/bet<br>
-     /api/cashout<br>
+    https://sixnine-8eyx.onrender.com/api/wallet/:id<br>
+    https://sixnine-8eyx.onrender.com/api/bet<br>
+    https://sixnine-8eyx.onrender.com/api/cashout<br>
    Use WebSocket client to:<br>
     Watch events live<br>
     Cash out in real-time<br>
